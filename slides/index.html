@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
       --r-heading-color: #58a6ff;
       --r-link-color: #58a6ff;
     }
+
     .reveal .slides section {
       text-align: center;
       padding: 20px 40px;
@@ -18,26 +20,62 @@
       overflow-y: auto !important;
       max-height: 100vh;
     }
+
     .reveal .slides section::-webkit-scrollbar {
       width: 6px;
     }
+
     .reveal .slides section::-webkit-scrollbar-thumb {
       background: #30363d;
       border-radius: 3px;
     }
-    .reveal h1, .reveal h2, .reveal h3 {
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3 {
       text-transform: none;
       font-weight: 700;
       margin-bottom: 0.2em;
     }
-    .reveal h1 { font-size: 1.8em; }
-    .reveal h2 { font-size: 1.3em; margin-bottom: 0.3em; }
-    .reveal h3 { font-size: 0.95em; color: #8b949e; }
-    .reveal p { margin: 0.3em 0; }
-    .reveal ul { text-align: left; margin: 0.3em 0; }
-    .reveal li { margin-bottom: 0.35em; font-size: 0.75em; }
-    .reveal .subtitle { color: #8b949e; font-size: 0.75em; margin-top: 0.15em; }
-    .reveal .highlight { color: #58a6ff; }
+
+    .reveal h1 {
+      font-size: 1.8em;
+    }
+
+    .reveal h2 {
+      font-size: 1.3em;
+      margin-bottom: 0.3em;
+    }
+
+    .reveal h3 {
+      font-size: 0.95em;
+      color: #8b949e;
+    }
+
+    .reveal p {
+      margin: 0.3em 0;
+    }
+
+    .reveal ul {
+      text-align: left;
+      margin: 0.3em 0;
+    }
+
+    .reveal li {
+      margin-bottom: 0.35em;
+      font-size: 0.75em;
+    }
+
+    .reveal .subtitle {
+      color: #8b949e;
+      font-size: 0.75em;
+      margin-top: 0.15em;
+    }
+
+    .reveal .highlight {
+      color: #58a6ff;
+    }
+
     .reveal .tag {
       display: inline-block;
       background: #21262d;
@@ -47,21 +85,40 @@
       margin: 3px;
       font-size: 0.6em;
     }
+
     .reveal .two-col {
       display: flex;
       gap: 1.5em;
       text-align: left;
     }
-    .reveal .two-col > div { flex: 1; }
-    .reveal .two-col h3 { margin-bottom: 0.2em; }
+
+    .reveal .two-col>div {
+      flex: 1;
+    }
+
+    .reveal .two-col h3 {
+      margin-bottom: 0.2em;
+    }
+
     .reveal .timeline-item {
       border-left: 3px solid #58a6ff;
-      padding-left: 0.8em;
-      margin-bottom: 0.5em;
+      padding-left: 0.6em;
+      margin-bottom: 0.3em;
       text-align: left;
     }
-    .reveal .timeline-item h3 { margin: 0; font-size: 0.75em; color: #58a6ff; }
-    .reveal .timeline-item p { margin: 0.1em 0 0; font-size: 0.6em; color: #8b949e; }
+
+    .reveal .timeline-item h3 {
+      margin: 0;
+      font-size: 0.6em;
+      color: #58a6ff;
+    }
+
+    .reveal .timeline-item p {
+      margin: 0.05em 0 0;
+      font-size: 0.48em;
+      color: #8b949e;
+    }
+
     .reveal .case-study-box {
       background: #161b22;
       border: 1px solid #30363d;
@@ -70,8 +127,16 @@
       text-align: left;
       margin-top: 0.4em;
     }
-    .reveal .case-study-box h3 { margin: 0 0 0.2em; }
-    .reveal .case-study-box p { font-size: 0.7em; margin: 0; }
+
+    .reveal .case-study-box h3 {
+      margin: 0 0 0.2em;
+    }
+
+    .reveal .case-study-box p {
+      font-size: 0.7em;
+      margin: 0;
+    }
+
     .reveal .advice-card {
       background: #161b22;
       border-left: 4px solid #58a6ff;
@@ -81,9 +146,59 @@
       border-radius: 0 8px 8px 0;
       font-size: 0.7em;
     }
-    .slide-number { font-size: 0.6em; }
+
+    .reveal .tech-cluster {
+      text-align: center;
+    }
+
+    .reveal .cluster-heading {
+      font-size: 0.7em;
+      margin: 0 0 0.3em;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .reveal .cluster-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .reveal .cluster-divider {
+      width: 60%;
+      height: 1px;
+      background: #30363d;
+      margin: 0.6em auto;
+    }
+
+    .reveal .tag-lang {
+      border-color: #58a6ff;
+      color: #58a6ff;
+    }
+
+    .reveal .tag-ml {
+      border-color: #d29922;
+      color: #d29922;
+    }
+
+    .reveal .tag-infra {
+      border-color: #3fb950;
+      color: #3fb950;
+    }
+
+    .reveal .tag-fw {
+      border-color: #bc8cff;
+      color: #bc8cff;
+    }
+
+    .slide-number {
+      font-size: 0.6em;
+    }
   </style>
 </head>
+
 <body>
   <div class="reveal">
     <div class="slides">
@@ -95,91 +210,138 @@
         <p style="font-size:0.7em; color:#8b949e; margin-top:0.8em;">
           <em>"I build infrastructure that productionalizes ML at Global Scale"</em>
         </p>
-        <p style="font-size:0.6em; color:#484f58; margin-top:0.8em;">SEAS Industry Summit &bull; March 27, 2026 &bull; University at Buffalo</p>
+        <p style="font-size:0.6em; color:#484f58; margin-top:0.8em;">SEAS Industry Summit &bull; March 27, 2026 &bull;
+          University at Buffalo</p>
       </section>
 
       <!-- Slide 2: My Professional Journey -->
       <section>
         <h2>My Professional Journey</h2>
         <div class="timeline-item fragment">
-          <h3>NIT Calicut &mdash; B.Tech Mechanical Engineering</h3>
-          <p>An unconventional start &mdash; but figuring it out anyway has been the constant.</p>
+          <h3>NIT Calicut | B.Tech Mech</h3>
+          <p>Robotics, Supply Chain, Route Optimization. Student Software Developer at university library.</p>
         </div>
         <div class="timeline-item fragment">
-          <h3>Deloitte &mdash; Software Engineer</h3>
-          <p>Built blockchain-based supply chain frameworks deployed across enterprise clients.</p>
+          <h3>Deloitte | SDE</h3>
+          <p>Backend &amp; blockchain framework development, deployed at multiple enterprise clients.</p>
         </div>
         <div class="timeline-item fragment">
-          <h3>Rupeek &mdash; Software Engineer 2</h3>
+          <h3>Rupeek | SDE-II</h3>
           <p>Backend engineering for payments &amp; notifications microservices at a fast-growing fintech.</p>
         </div>
         <div class="timeline-item fragment">
-          <h3>University at Buffalo &mdash; MS Computer Science (3.96 GPA)</h3>
-          <p>Focus on Distributed Systems &amp; NLP. RA at UB Blockchain Lab.</p>
+          <h3>University at Buffalo | MS CSE</h3>
+          <p>Focus on distributed systems. RA at UB blockchain Lab.</p>
         </div>
         <div class="timeline-item fragment">
-          <h3>Fidelity Investments &mdash; Full Stack Engineer</h3>
-          <p>Brokerage services: currency exchange, open tax lots, past orders.</p>
+          <h3>Fidelity Investments | Full Stack Engineer</h3>
+          <p>Full stack engineering for currency exchange &amp; past orders services.</p>
         </div>
         <div class="timeline-item fragment">
-          <h3>AWS &mdash; SDE-II (Present)</h3>
-          <p>Marketing Data Science &amp; Engineering &mdash; ML infrastructure &amp; pipelines.</p>
+          <h3>WashU Imaging Science Lab | Independent Researcher (Present)</h3>
+          <p>UHD MRI Brain Segmentation</p>
+        </div>
+        <div class="timeline-item fragment">
+          <h3>AWS | SDE-II (Present)</h3>
+          <p>Data Science &amp; Engineering: ML Platform &amp; low-latency model serving. ORR Bar Raiser.</p>
+        </div>
+        <div class="timeline-item fragment" style="border-left-color: #f85149;">
+          <h3 style="color:#f85149;">Challenge</h3>
+          <p>Navigating unfamiliar codebases &amp; technologies. Overcame it through side projects and starting with
+            small tasks to build understanding.</p>
         </div>
       </section>
 
       <!-- Slide 3: Tech Stack -->
       <section>
         <h2>Tech Stack</h2>
-        <p class="subtitle">Tools I use in my daily work</p>
-        <div class="two-col">
-          <div>
-            <h3 style="color:#58a6ff;">Languages</h3>
-            <span class="tag">Java</span>
-            <span class="tag">Python</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">JavaScript</span>
-          </div>
-          <div>
-            <h3 style="color:#58a6ff;">AI / ML Frameworks</h3>
-            <span class="tag">PyTorch</span>
-            <span class="tag">LangChain</span>
-            <span class="tag">LLM APIs</span>
-            <span class="tag">Feature Store</span>
+        <div class="tech-cluster">
+          <h3 class="cluster-heading" style="color:#58a6ff;">Languages</h3>
+          <div class="cluster-tags">
+            <span class="tag tag-lang">Java (Backend)</span>
+            <span class="tag tag-lang">Python (ML)</span>
+            <span class="tag tag-lang">TypeScript (IaC/Frontend)</span>
           </div>
         </div>
-        <div class="two-col" style="margin-top:0.5em;">
-          <div>
-            <h3 style="color:#58a6ff;">Infrastructure</h3>
-            <span class="tag">AWS</span>
-            <span class="tag">Microservices</span>
-            <span class="tag">Data Pipelines</span>
-            <span class="tag">CI/CD</span>
+        <div class="cluster-divider"></div>
+        <div class="tech-cluster">
+          <h3 class="cluster-heading" style="color:#d29922;">AI / ML Platforms</h3>
+          <div class="cluster-tags">
+            <span class="tag tag-ml">SageMaker Studio</span>
+            <span class="tag tag-ml">Bedrock Studio</span>
           </div>
-          <div>
-            <h3 style="color:#58a6ff;">Frameworks</h3>
-            <span class="tag">Spring Boot</span>
-            <span class="tag">Angular</span>
-            <span class="tag">React</span>
-            <span class="tag">Node.js</span>
+        </div>
+        <div class="cluster-divider"></div>
+        <div class="tech-cluster">
+          <h3 class="cluster-heading" style="color:#3fb950;">Infrastructure</h3>
+          <div class="cluster-tags">
+            <span class="tag tag-infra">Native AWS</span>
+            <span class="tag tag-infra">Fargate</span>
+            <span class="tag tag-infra">Kubernetes</span>
+            <span class="tag tag-infra">DynamoDB</span>
+            <span class="tag tag-infra">OpenSearch</span>
+            <span class="tag tag-infra">Airflow</span>
+            <span class="tag tag-infra">Spark</span>
+          </div>
+        </div>
+        <div class="cluster-divider"></div>
+        <div class="tech-cluster">
+          <h3 class="cluster-heading" style="color:#f85149;">AI Coding Agents</h3>
+          <div class="cluster-tags">
+            <span class="tag" style="border-color:#f85149; color:#f85149;">Kiro</span>
+            <span class="tag" style="border-color:#f85149; color:#f85149;">Claude Code</span>
+            <span class="tag" style="border-color:#f85149; color:#f85149;">Claude Opus 4.6 (1M, Max)</span>
+            <span class="tag" style="border-color:#f85149; color:#f85149;">MCPs</span>
+          </div>
+        </div>
+        <div class="cluster-divider"></div>
+        <div class="tech-cluster">
+          <h3 class="cluster-heading" style="color:#bc8cff;">Frameworks</h3>
+          <div class="cluster-tags">
+            <span class="tag tag-fw">Several Internal Frameworks</span>
           </div>
         </div>
       </section>
 
-      <!-- Slide 4: Case Study -->
+      <!-- Slide 4A: Scaling ML -->
       <section>
-        <h2>Case Study</h2>
-        <p class="subtitle">Unified Data Collection Framework at AWS</p>
+        <h2>Scaling ML from Experimentation to Production</h2>
         <div class="case-study-box">
-          <h3 style="color:#f85149;">The Problem</h3>
-          <p style="font-size:0.8em;">Fragmented data ingestion processes across multiple AWS data warehouses &mdash; scalability and operational challenges with growing data sources.</p>
+          <h3 style="color:#f85149;">The Pain Point</h3>
+          <ul style="font-size:0.8em; margin:0.3em 0;">
+            <li>Tens of parallel ML experiments running at any time, single digit promotions to production per quarter
+            </li>
+            <li>Inputs from various sources: clickstreams, events, CRMs, ad providers, research firms across multiple data
+              warehouses</li>
+            <li>Every new model meant re-solving the same engineering problems: ingestion, feature drift, monitoring, retraining, security</li>
+          </ul>
         </div>
-        <div class="case-study-box fragment">
-          <h3 style="color:#3fb950;">The Solution</h3>
-          <p style="font-size:0.8em;">Designed and built a unified data collection framework to consolidate ingestion, improving scalability and reducing operational overhead.</p>
+      </section>
+
+      <!-- Slide 4B: The Solution -->
+      <section>
+        <h2>Scaling ML from Experimentation to Production</h2>
+        <div class="case-study-box">
+          <h3 style="color:#3fb950;">The Solution: Unified ML Platform</h3>
+          <ul style="font-size:0.8em; margin:0.3em 0;">
+            <li><strong>Connector-based Ingestion &amp; Centralized Feature Store</strong>: Built-in lineage tracking,
+              data quality checks, catalog, etc.</li>
+            <li><strong>Experimentation Layer</strong>: Model types, schemas, transformations, steps via configs.</li>
+            <li><strong>Productionalization</strong>: Drift detection &amp; auto retraining, rollbacks, HITL
+              validations, A/B testing, centralized monitoring, security, etc.</li>
+          </ul>
         </div>
-        <div class="case-study-box fragment">
-          <h3 style="color:#d29922;">AI Agents Layer</h3>
-          <p style="font-size:0.8em;">Implemented AI Agents to automate data ingestion across web &amp; API channels, enabling researchers to perform natural language queries for competitive intelligence.</p>
+      </section>
+
+      <!-- Slide 4C: Impact -->
+      <section>
+        <h2>Scaling ML from Experimentation to Production</h2>
+        <div class="case-study-box">
+          <h3 style="color:#d29922;">Impact</h3>
+          <ul style="font-size:0.8em; margin:0.3em 0;">
+            <li>Reduced productionalizing a new model from months of engineering to days, while raising the reliability
+              bar across the entire fleet.</li>
+          </ul>
         </div>
       </section>
 
@@ -188,13 +350,18 @@
         <h2>AI in My Workflow</h2>
         <p class="subtitle">How LLMs have changed my daily work</p>
         <ul>
-          <li class="fragment"><span class="highlight">Code Generation</span> &mdash; Using Copilot / LLMs for boilerplate, tests, and rapid prototyping</li>
-          <li class="fragment"><span class="highlight">Agentic AI</span> &mdash; Building agents that automate data gathering and research tasks</li>
-          <li class="fragment"><span class="highlight">Code Review</span> &mdash; LLMs as a first-pass reviewer for logic and style</li>
-          <li class="fragment"><span class="highlight">Documentation</span> &mdash; Generating and maintaining technical docs faster</li>
+          <li class="fragment"><span class="highlight">Code Generation</span>:Using Copilot / LLMs for boilerplate,
+            tests, and rapid prototyping</li>
+          <li class="fragment"><span class="highlight">Agentic AI</span>:Building agents that automate data gathering
+            and research tasks</li>
+          <li class="fragment"><span class="highlight">Code Review</span>:LLMs as a first-pass reviewer for logic and
+            style</li>
+          <li class="fragment"><span class="highlight">Documentation</span>:Generating and maintaining technical docs
+            faster</li>
         </ul>
         <p class="fragment" style="font-size:0.7em; color:#8b949e; margin-top:0.5em;">
-          <em>Skills becoming essential:</em> Prompt engineering, systems thinking, knowing <strong>what</strong> to build &mdash; not just <strong>how</strong>.
+          <em>Skills becoming essential:</em> Prompt engineering, systems thinking, knowing <strong>what</strong> to
+          build, not just <strong>how</strong>.
         </p>
       </section>
 
@@ -211,7 +378,7 @@
           <div>
             <p style="font-size:1.5em; margin:0;">💻</p>
             <h3 style="color:#58a6ff;">Afternoon</h3>
-            <p style="font-size:0.75em;">Deep work &mdash; design docs, coding, debugging</p>
+            <p style="font-size:0.75em;">Deep work: design docs, coding, debugging</p>
           </div>
         </div>
         <div class="two-col" style="margin-top:0.3em;">
@@ -232,10 +399,14 @@
       <section>
         <h2>Industry Trends &amp; Future Outlook</h2>
         <ul>
-          <li class="fragment"><span class="highlight">Agentic AI</span> &mdash; Autonomous agents that plan, reason, and execute multi-step tasks</li>
-          <li class="fragment"><span class="highlight">ML Infrastructure</span> &mdash; Growing demand for engineers who can bridge ML research and production</li>
-          <li class="fragment"><span class="highlight">Data Engineering</span> &mdash; Real-time pipelines, feature stores, and data quality at scale</li>
-          <li class="fragment"><span class="highlight">What to learn now:</span> Systems design, cloud infrastructure, and how to work alongside AI tools</li>
+          <li class="fragment"><span class="highlight">Agentic AI</span>:Autonomous agents that plan, reason, and
+            execute multi-step tasks</li>
+          <li class="fragment"><span class="highlight">ML Infrastructure</span>:Growing demand for engineers who can
+            bridge ML research and production</li>
+          <li class="fragment"><span class="highlight">Data Engineering</span>:Real-time pipelines, feature stores, and
+            data quality at scale</li>
+          <li class="fragment"><span class="highlight">What to learn now:</span> Systems design, cloud infrastructure,
+            and how to work alongside AI tools</li>
         </ul>
       </section>
 
@@ -243,19 +414,22 @@
       <section>
         <h2>Advice for Students</h2>
         <div class="advice-card fragment">
-          <strong>1. Build in public</strong> &mdash; Ship projects on GitHub. A portfolio speaks louder than a resume.
+          <strong>1. Build in public</strong>:Ship projects on GitHub. A portfolio speaks louder than a resume.
         </div>
         <div class="advice-card fragment">
-          <strong>2. Go deep on fundamentals</strong> &mdash; Data structures, system design, and distributed systems never go out of style.
+          <strong>2. Go deep on fundamentals</strong>:Data structures, system design, and distributed systems never go
+          out of style.
         </div>
         <div class="advice-card fragment">
-          <strong>3. Embrace the unconventional path</strong> &mdash; I went from Mechanical Engineering to AWS. The path doesn't have to be linear.
+          <strong>3. Embrace the unconventional path</strong>:I went from Mechanical Engineering to AWS. The path
+          doesn't have to be linear.
         </div>
         <div class="advice-card fragment">
-          <strong>4. Learn to learn fast</strong> &mdash; Technologies change; the ability to pick things up quickly is the real skill.
+          <strong>4. Learn to learn fast</strong>:Technologies change; the ability to pick things up quickly is the real
+          skill.
         </div>
         <div class="advice-card fragment">
-          <strong>5. Network intentionally</strong> &mdash; Reach out, attend events like this one, and follow up.
+          <strong>5. Network intentionally</strong>:Reach out, attend events like this one, and follow up.
         </div>
       </section>
 
@@ -294,4 +468,5 @@
     });
   </script>
 </body>
+
 </html>
