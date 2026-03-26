@@ -5,12 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Madhav Appaneni - SEAS Industry Summit 2026</title>
+  <link rel="icon" type="image/png" href="ub logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/night.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300;400;700&display=swap');
+
     :root {
-      --r-heading-color: #58a6ff;
-      --r-link-color: #58a6ff;
+      --r-background-color: #ffffff;
+      --r-main-color: #333333;
+      --r-heading-color: #005BBB;
+      --r-link-color: #005BBB;
+      --r-main-font: 'Open Sans', sans-serif;
+      --r-main-font-size: 40px;
+      --r-heading-font: 'Montserrat', Impact, sans-serif;
+      --r-heading-line-height: 1.2;
+      --r-heading-letter-spacing: -0.03em;
+      --r-heading-text-transform: none;
+      --r-heading-font-weight: normal;
+      --r-heading-text-shadow: none;
+      --r-code-font: monospace;
+      --r-block-margin: 20px;
+      --r-heading-margin: 0 0 20px 0;
     }
 
     .reveal .slides section {
@@ -26,7 +42,7 @@
     }
 
     .reveal .slides section::-webkit-scrollbar-thumb {
-      background: #30363d;
+      background: #ccc;
       border-radius: 3px;
     }
 
@@ -36,6 +52,7 @@
       text-transform: none;
       font-weight: 700;
       margin-bottom: 0.2em;
+      color: #005BBB;
     }
 
     .reveal h1 {
@@ -49,11 +66,12 @@
 
     .reveal h3 {
       font-size: 0.95em;
-      color: #8b949e;
+      color: #666;
     }
 
     .reveal p {
       margin: 0.3em 0;
+      color: #333;
     }
 
     .reveal ul {
@@ -64,26 +82,28 @@
     .reveal li {
       margin-bottom: 0.35em;
       font-size: 0.75em;
+      color: #333;
     }
 
     .reveal .subtitle {
-      color: #8b949e;
+      color: #666;
       font-size: 0.75em;
       margin-top: 0.15em;
     }
 
     .reveal .highlight {
-      color: #58a6ff;
+      color: #005BBB;
     }
 
     .reveal .tag {
       display: inline-block;
-      background: #21262d;
-      border: 1px solid #30363d;
+      background: #f0f4f8;
+      border: 1px solid #d0d7de;
       border-radius: 20px;
       padding: 4px 12px;
       margin: 3px;
       font-size: 0.6em;
+      color: #333;
     }
 
     .reveal .two-col {
@@ -101,7 +121,7 @@
     }
 
     .reveal .timeline-item {
-      border-left: 3px solid #58a6ff;
+      border-left: 3px solid #005BBB;
       padding-left: 0.6em;
       margin-bottom: 0.3em;
       text-align: left;
@@ -110,18 +130,18 @@
     .reveal .timeline-item h3 {
       margin: 0;
       font-size: 0.6em;
-      color: #58a6ff;
+      color: #005BBB;
     }
 
     .reveal .timeline-item p {
       margin: 0.05em 0 0;
       font-size: 0.48em;
-      color: #8b949e;
+      color: #666;
     }
 
     .reveal .case-study-box {
-      background: #161b22;
-      border: 1px solid #30363d;
+      background: #f0f4f8;
+      border: 1px solid #d0d7de;
       border-radius: 10px;
       padding: 0.8em 1em;
       text-align: left;
@@ -138,8 +158,8 @@
     }
 
     .reveal .advice-card {
-      background: #161b22;
-      border-left: 4px solid #58a6ff;
+      background: #f0f4f8;
+      border-left: 4px solid #005BBB;
       padding: 0.5em 1em;
       margin: 0.3em 0;
       text-align: left;
@@ -169,28 +189,28 @@
     .reveal .cluster-divider {
       width: 60%;
       height: 1px;
-      background: #30363d;
+      background: #d0d7de;
       margin: 0.6em auto;
     }
 
     .reveal .tag-lang {
-      border-color: #58a6ff;
-      color: #58a6ff;
+      border-color: #005BBB;
+      color: #005BBB;
     }
 
     .reveal .tag-ml {
-      border-color: #d29922;
-      color: #d29922;
+      border-color: #b8860b;
+      color: #b8860b;
     }
 
     .reveal .tag-infra {
-      border-color: #3fb950;
-      color: #3fb950;
+      border-color: #1a7f37;
+      color: #1a7f37;
     }
 
     .reveal .tag-fw {
-      border-color: #bc8cff;
-      color: #bc8cff;
+      border-color: #8250df;
+      color: #8250df;
     }
 
     .slide-number {
@@ -201,16 +221,19 @@
 
 <body>
   <div class="reveal">
+    <div style="position:fixed; top:0; left:0; right:0; background:#005BBB; color:#fff; font-size:14px; padding:6px 20px; z-index:100; text-align:center; font-family:'Open Sans',sans-serif; letter-spacing:0.05em;">
+      University at Buffalo &bull; SEAS Industry Summit
+    </div>
     <div class="slides">
 
       <!-- Slide 1: Introduction -->
       <section>
         <h1>Madhav Appaneni</h1>
         <h3>SDE-II at Amazon Web Services (AWS)</h3>
-        <p style="font-size:0.7em; color:#8b949e; margin-top:0.8em;">
+        <p style="font-size:0.7em; color:#666; margin-top:0.8em;">
           <em>"I build infrastructure that productionalizes ML at Global Scale"</em>
         </p>
-        <p style="font-size:0.6em; color:#484f58; margin-top:0.8em;">SEAS Industry Summit &bull; March 27, 2026 &bull;
+        <p style="font-size:0.6em; color:#999; margin-top:0.8em;">SEAS Industry Summit &bull; March 27, 2026 &bull;
           University at Buffalo</p>
       </section>
 
@@ -245,8 +268,8 @@
           <h3>AWS | SDE-II (Present)</h3>
           <p>Data Science &amp; Engineering: ML Platform &amp; low-latency model serving. ORR Bar Raiser.</p>
         </div>
-        <div class="timeline-item fragment" style="border-left-color: #f85149;">
-          <h3 style="color:#f85149;">Challenge</h3>
+        <div class="timeline-item fragment" style="border-left-color: #c9302c;">
+          <h3 style="color:#c9302c;">Challenge</h3>
           <p>Navigating unfamiliar codebases &amp; technologies</p>
         </div>
       </section>
@@ -255,7 +278,7 @@
       <section>
         <h2>Tech Stack</h2>
         <div class="tech-cluster">
-          <h3 class="cluster-heading" style="color:#58a6ff;">Languages</h3>
+          <h3 class="cluster-heading" style="color:#005BBB;">Languages</h3>
           <div class="cluster-tags">
             <span class="tag tag-lang">Java (Backend)</span>
             <span class="tag tag-lang">Python (ML)</span>
@@ -264,7 +287,7 @@
         </div>
         <div class="cluster-divider"></div>
         <div class="tech-cluster">
-          <h3 class="cluster-heading" style="color:#d29922;">AI / ML Platforms</h3>
+          <h3 class="cluster-heading" style="color:#b8860b;">AI / ML Platforms</h3>
           <div class="cluster-tags">
             <span class="tag tag-ml">SageMaker Studio</span>
             <span class="tag tag-ml">Bedrock Studio</span>
@@ -272,7 +295,7 @@
         </div>
         <div class="cluster-divider"></div>
         <div class="tech-cluster">
-          <h3 class="cluster-heading" style="color:#3fb950;">Infrastructure</h3>
+          <h3 class="cluster-heading" style="color:#1a7f37;">Infrastructure</h3>
           <div class="cluster-tags">
             <span class="tag tag-infra">Native AWS</span>
             <span class="tag tag-infra">Fargate</span>
@@ -285,12 +308,12 @@
         </div>
         <div class="cluster-divider"></div>
         <div class="tech-cluster">
-          <h3 class="cluster-heading" style="color:#f85149;">AI Coding Agents</h3>
+          <h3 class="cluster-heading" style="color:#c9302c;">AI Coding Agents</h3>
           <div class="cluster-tags">
-            <span class="tag" style="border-color:#f85149; color:#f85149;">Kiro</span>
-            <span class="tag" style="border-color:#f85149; color:#f85149;">Claude Code</span>
-            <span class="tag" style="border-color:#f85149; color:#f85149;">Claude Opus 4.6 (1M, Max)</span>
-            <span class="tag" style="border-color:#f85149; color:#f85149;">MCPs</span>
+            <span class="tag" style="border-color:#c9302c;color:#c9302c;">Kiro</span>
+            <span class="tag" style="border-color:#c9302c;color:#c9302c;">Claude Code</span>
+            <span class="tag" style="border-color:#c9302c;color:#c9302c;">Claude Opus 4.6 (1M, Max)</span>
+            <span class="tag" style="border-color:#c9302c;color:#c9302c;">MCPs</span>
           </div>
         </div>
         <div class="cluster-divider"></div>
@@ -306,7 +329,7 @@
       <section>
         <h2>Scaling ML from Experimentation to Production</h2>
         <div class="case-study-box">
-          <h3 style="color:#f85149;">The Pain Point</h3>
+          <h3 style="color:#c9302c;">The Pain Point</h3>
           <ul style="font-size:0.8em; margin:0.3em 0;">
             <li>Tens of parallel ML experiments running at any time, single digit promotions to production per quarter
             </li>
@@ -323,7 +346,7 @@
       <section>
         <h2>Scaling ML from Experimentation to Production</h2>
         <div class="case-study-box">
-          <h3 style="color:#3fb950;">The Solution: Unified ML Platform</h3>
+          <h3 style="color:#1a7f37;">The Solution: Unified ML Platform</h3>
           <ul style="font-size:0.8em; margin:0.3em 0;">
             <li><strong>Connector-based Ingestion &amp; Centralized Feature Store</strong>: Built-in lineage tracking,
               data quality checks, catalog, etc.</li>
@@ -338,7 +361,7 @@
       <section>
         <h2>Scaling ML from Experimentation to Production</h2>
         <div class="case-study-box">
-          <h3 style="color:#d29922;">Impact</h3>
+          <h3 style="color:#b8860b;">Impact</h3>
           <ul style="font-size:0.8em; margin:0.3em 0;">
             <li>Reduced productionalizing a new model from months of engineering to days, while raising the reliability
               bar across the entire fleet.</li>
@@ -359,11 +382,11 @@
         </ul>
         <div class="two-col fragment" style="margin-top:0.5em;">
           <div>
-            <h3 style="color:#3fb950;">Automated</h3>
+            <h3 style="color:#1a7f37;">Automated</h3>
             <p style="font-size:0.7em;">Initial drafts, routine tasks</p>
           </div>
           <div>
-            <h3 style="color:#d29922;">Still Essential</h3>
+            <h3 style="color:#b8860b;">Still Essential</h3>
             <p style="font-size:0.7em;">Critical eye: architectural decisions, scale considerations, edge cases<br>
               What to build, deep domain knowledge</p>
           </div>
@@ -377,24 +400,24 @@
         <div class="two-col">
           <div>
             <p style="font-size:1.5em; margin:0;">🌅</p>
-            <h3 style="color:#58a6ff;">Morning</h3>
+            <h3 style="color:#005BBB;">Morning</h3>
             <p style="font-size:0.75em;">Stand-ups, code reviews, team syncs</p>
           </div>
           <div>
             <p style="font-size:1.5em; margin:0;">💻</p>
-            <h3 style="color:#58a6ff;">Afternoon</h3>
+            <h3 style="color:#005BBB;">Afternoon</h3>
             <p style="font-size:0.75em;">Deep work: design docs, coding, debugging</p>
           </div>
         </div>
         <div class="two-col" style="margin-top:0.3em;">
           <div>
             <p style="font-size:1.5em; margin:0;">🔬</p>
-            <h3 style="color:#58a6ff;">Late Afternoon</h3>
+            <h3 style="color:#005BBB;">Late Afternoon</h3>
             <p style="font-size:0.75em;">Research, learning, exploring new tools</p>
           </div>
           <div>
             <p style="font-size:1.5em; margin:0;">📋</p>
-            <h3 style="color:#58a6ff;">Wrap-up</h3>
+            <h3 style="color:#005BBB;">Wrap-up</h3>
             <p style="font-size:0.75em;">Planning next day, async reviews</p>
           </div>
         </div>
@@ -450,8 +473,8 @@
             <p style="font-size:0.9em;">
               <span class="highlight">LinkedIn:</span><br>linkedin.com/in/madhav-appaneni
             </p>
-            <h3 style="color:#8b949e; margin-top:0.8em;">Questions?</h3>
-            <p style="font-size:0.7em; color:#484f58;">Thank you for listening!</p>
+            <h3 style="color:#666; margin-top:0.8em;">Questions?</h3>
+            <p style="font-size:0.7em; color:#999;">Thank you for listening!</p>
           </div>
         </div>
       </section>
